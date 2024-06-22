@@ -1,6 +1,5 @@
 class Layer:
-    """
-    Abstract class for any NN layer
+    """Abstract class for any NN layer
     """
 
     def feedforward(self):
