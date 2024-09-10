@@ -28,7 +28,6 @@ class Linear(Layer):
     def backprop(self, delta: np.ndarray, lr: float) -> np.ndarray:
         self.dW = delta @ self.a.T
         self.db = np.sum(delta, axis=1, keepdims=True)
-        # self.db = delta
         new_delta = self.W.T @ delta
 
         # update params

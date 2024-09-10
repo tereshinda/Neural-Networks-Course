@@ -1,5 +1,5 @@
 import numpy as np
-from Layers.Layer import Layer
+from NN_utils.Layers.Layer import Layer
 
 
 class NeuralNetwork:
