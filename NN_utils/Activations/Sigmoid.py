@@ -1,4 +1,4 @@
-from Lab_1.NN_utils.Layers.Layer import Layer
+from NN_utils.Layers.Layer import Layer
 import numpy as np
 
 
