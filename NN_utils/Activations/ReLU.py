@@ -10,7 +10,7 @@ class ReLU(Layer):
     # Derivative
     @staticmethod
     def dfn(x: float | np.ndarray) -> float | np.ndarray:
-        return x > 0
+        return x >= 0
 
     def feedforward(self, x: np.ndarray) -> np.ndarray:
         self.a = x
