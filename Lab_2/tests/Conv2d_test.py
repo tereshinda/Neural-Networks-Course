@@ -1,6 +1,8 @@
 from NN_utils.Layers.Conv2d import Conv2d
 import numpy as np
 
+# FEEDFORWARD
+#######################################################
 input_channels = 2
 output_channels = 3
 filter_size = 3
@@ -63,3 +65,6 @@ expected_output = np.array([[[25, 25],
                              [15, -12]]])
 
 np.testing.assert_array_equal(output_data, expected_output)
+#######################################################
+
+#%%
