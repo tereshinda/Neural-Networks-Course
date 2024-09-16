@@ -8,7 +8,9 @@ class Softmax(Layer):
         self.cross_entropy_loss = cross_entropy_loss
 
     def feedforward(self, x: np.ndarray) -> np.ndarray:
-        exps = np.exp(x)
+        # numerically stable way to calculate
+        shift_x = x - np.max(x)
+        exps = np.exp(shift_x)
         self.y = exps / np.sum(exps)
         return self.y
 
