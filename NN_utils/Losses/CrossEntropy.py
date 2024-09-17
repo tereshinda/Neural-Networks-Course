@@ -7,7 +7,8 @@ class CrossEntropy:
 
     def fn(self, y_true: np.ndarray, y_pred: np.ndarray) -> np.ndarray:
         if self.softmax:
-            return -np.sum(y_true * np.log(y_pred))
+            #  Adding a small value for stability
+            return -np.sum(y_true * np.log(y_pred + 1e-9))
 
     def dfn(self, y_true: np.ndarray, y_pred: np.ndarray) -> np.ndarray:
         if self.softmax:
