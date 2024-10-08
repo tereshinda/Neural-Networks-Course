@@ -120,10 +120,3 @@ class GRU(Layer):
         self.by -= lr * self.dby
 
         return np.array([])
-
-#%%
-# t = GRU(input_size=9, hidden_size=13, output_size=1)
-# rand_x = np.random.rand(5, 9, 1)
-# y = t.feedforward(rand_x)
-#
-# t.backprop(y, lr=1e-2)
