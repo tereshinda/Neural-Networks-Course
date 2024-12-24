@@ -184,3 +184,5 @@ grad_weight_torch = conv_layer_torch.weight.grad.numpy()
 
 np.testing.assert_array_equal(delta_input, grad_input_torch)
 np.testing.assert_array_equal(conv_layer.d_filters, grad_weight_torch)
+
+#%%
