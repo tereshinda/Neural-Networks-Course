@@ -25,15 +25,15 @@ class Linear(Layer):
         self.a = x
         return self.W @ x + self.b
 
-    def backprop(self, delta: np.ndarray, lr: float) -> np.ndarray:
+    def backprop(self, delta: np.ndarray, lr: float, update_params: bool = True) -> np.ndarray:
         self.dW = delta @ self.a.T
         self.db = np.sum(delta, axis=1, keepdims=True)
         new_delta = self.W.T @ delta
 
         # update params
         # assert self.W.shape == self.dW.shape
-
-        self.W -= lr * self.dW
-        self.b -= lr * self.db
+        if update_params:
+            self.W -= lr * self.dW
+            self.b -= lr * self.db
 
         return new_delta
