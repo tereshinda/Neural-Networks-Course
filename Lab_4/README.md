@@ -74,4 +74,10 @@ Noise from normal distribution, passed through the decoder
 #### Other losses
 ![other_losses.png](img/Other_losses.png)
 
-## Sources
+## Sources (Russian)
+1. Variational Autoencoder (VAE) ([Яндекс.Учебник по машинному обучению](https://education.yandex.ru/handbook/ml/article/variational-autoencoder-(vae)))
+2. Генеративно-состязательные сети (GAN) ([Яндекс.Учебник по машинному обучению](https://education.yandex.ru/handbook/ml/article/generativno-sostyazatelnye-seti-(gan)))
+## Sources (English)
+1. Autoencoding beyond pixels using a learned similarity metric ([arXiv](https://arxiv.org/abs/1512.09300))
+2. VAE ([PyTorch examples, GitHub](https://github.com/pytorch/examples/blob/main/vae/main.py))
+3. Vanilla GAN, Pytorch ([Github](https://github.com/wiseodd/generative-models/blob/master/GAN/vanilla_gan/gan_pytorch.py))
