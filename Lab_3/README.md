@@ -9,6 +9,51 @@ Criteria:
 
 ---
 ## Results
+Since the main objective was to compare algorithms, the training used a roughly similar set of hyperparameters, and no attempt was made to bring the quality of each of the recurrence cells up to the best possible result.
+
+### Loss history
+MSE
+![mse_losses.png](img/MSE_history.png)
+
+### Metrics
+
+<table class="results" align="center">
+	<tbody>
+		<tr>
+			<td></td>
+			<td>MSE</td>
+			<td>RMSE</td>
+            <td>R^2</td>
+		</tr>
+		<tr>
+			<td>RNN</td>
+			<td>1043.764</td>
+            <td>32.30</td>
+            <td>-0.092</td>
+		</tr>
+		<tr>
+			<td>LSTM</td>
+			<td>180.554</td>
+            <td>13.43</td>
+            <td>0.811</td>
+		</tr>
+		<tr>
+			<td>GRU</td>
+			<td>258.007</td>
+            <td>16.06</td>
+            <td>0.729</td>
+		</tr>
+	</tbody>
+</table>
+
+### Predictions
+#### RNN
+![rnn_preds.png](img/RNN_preds.png)
+#### LSTM
+![lstm_preds.png](img/LSTM_preds.png)
+#### GRU
+![gru_preds.png](img/GRU_preds.png)
+
 
 ## Sources (Russian)
 1. [Нейросети для работы с последовательностями](https://education.yandex.ru/handbook/ml/article/nejroseti-dlya-raboty-s-posledovatelnostyami) (Яндекс Учебник)
